@@ -3,6 +3,8 @@
 사용자가 ai model에 training을 위해 이미지 데이터를 전달하는 과정인 input data pipeline에 대해 최적화를 진행해 보았다. 
 최적화 방식은 총 2가지를 진행을 해 보았다. 
 
+Image data는 ImageNet-1k image dataset을 이용을 해서 최적화의 정도를 판단을 해 보았다. 
+
 Input data pipeline은 SimCLR의 input data pipeline을 참고를 해서 구성을 하였다. 
 
 
