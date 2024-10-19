@@ -6,7 +6,7 @@
 Image data는 ImageNet-1k image dataset을 이용해서 최적화의 정도를 판단해 보았다. 
 
 Input data pipeline은 SimCLR의 input data pipeline을 참고를 해서 구성을 하였다. 
-
+![simclr](https://github.com/user-attachments/assets/e94174a8-00d9-4eb7-8dab-7adecb91d67a)
 
 하지만 resize연산을 추가함.
 
