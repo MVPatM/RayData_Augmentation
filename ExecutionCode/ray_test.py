@@ -25,6 +25,7 @@ def album_randomcrop(batch: Dict[str, np.ndarray]) -> Dict[str, np.ndarray]:
 #resize는 전체 이미지를 한꺼번에 resize를 시켜야한다. 
 def album_compose(batch: Dict[str, np.ndarray]) -> Dict[str, np.ndarray]:
     transform = A.Compose([A.Resize(1268, 1020),
+                        A.ToFloat(),
                         A.Flip(0.5),
                         A.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1, p=1.0),
                         A.ToGray(),
@@ -36,7 +37,6 @@ def album_compose(batch: Dict[str, np.ndarray]) -> Dict[str, np.ndarray]:
     batch["image"] = augmentation["image"]
     return batch
 
-
 start = time.time()
 path = "C:\\Users\\hsy99\\test\\images"
 result = ray.data.read_images(path, parallelism=4, mode="RGB").map(album_compose).write_images(path="C:\\Users\\hsy99\\test\\converted", file_format="JPEG", column='image')
@@ -44,7 +44,8 @@ end = time.time()
 print(f"{end - start:.5f} sec")
 
 """
-# Check the logical plan and physical plan of executed data pipeline
+# Check the logical plan and physical plan of executed input data pipeline
+# If you want to see the plan, do not execute write_images() function
 plan = result._logical_plan
 print(f"Logical Plan -> {plan._dag}")
 
