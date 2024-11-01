@@ -1,4 +1,4 @@
-This is the ray configuration file
+This is the ray configuration file running in aws environment.
 
 If you want to start ray cluster, ray up config.yaml
 
