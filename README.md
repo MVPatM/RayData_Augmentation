@@ -11,11 +11,12 @@ Input data pipeline은 SimCLR의 input data pipeline을 참고해서 구성했�
 
 Ray Data의 내부와 Albumentations library의 내부 모두 최적화를 진행했다. 
 
-<Albumentations library>
+<Albumentations library 내부>
+
 1. Operation Reordering function 추가
   
 2. Pushing down Float conversion function 추가
 
-<Ray Data>
-test_rule이라는 optimization rule을 추가
-이 rule에서는 입력받은 UDF을 확인하고 operation reordering과 pushdown float최적화 방식을 수행한다.
+<Ray Data 내부>
+
+test_rule이라는 optimization rule을 추가했고 이 rule에서는 입력받은 UDF을 확인하고 operation reordering과 pushdown float최적화 방식을 수행한다.
