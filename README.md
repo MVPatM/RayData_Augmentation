@@ -19,4 +19,4 @@ Ray Data의 내부와 Albumentations library의 내부 모두 최적화를 진�
 
 <Ray Data 내부>
 
-test_rule이라는 optimization rule을 추가했고 이 rule에서는 입력받은 UDF을 확인하고 operation reordering과 pushdown float최적화 방식을 수행한다.
+test_rule이라는 optimization rule을 ray data내부에 추가했고 이 rule에서는 입력받은 UDF을 확인하고 operation reordering과 pushdown float최적화 방식을 수행한다.
