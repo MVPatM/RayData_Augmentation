@@ -13,7 +13,7 @@ Ray Data의 내부와 Albumentations library의 내부 모두 최적화를 진�
 
 <Albumentations library>
 1. Operation Reordering function 추가
-
+  
 2. Pushing down Float conversion function 추가
 
 <Ray Data>
