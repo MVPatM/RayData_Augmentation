@@ -1,1 +1,2 @@
-This file is execution file of data augmentations using ray data.
+This file is the execution file of running input data pipeline.
+
