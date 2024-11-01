@@ -1,4 +1,4 @@
-This is the change part of albumentations library.
+This is the changed part of albumentations library.
 I push the these two functions to Compose class in albumentations/core/composition.py
 These functions are Compose class's method.
 
