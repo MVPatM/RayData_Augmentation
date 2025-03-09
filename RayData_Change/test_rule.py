@@ -37,7 +37,7 @@ class TestLogicalRule(Rule):
                     op = current_op
                 break
             
-            if _get_udf_name(current_op._fn) == "decrease_brightness":
+            if _get_udf_name(current_op._fn) == "album_randomcrop":
                 operators.append(copy.copy(current_op))
                 if len(current_op.input_dependencies) > 0:
                     current_op.input_dependencies[0]._output_dependencies = current_op.output_dependencies
