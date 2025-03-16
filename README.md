@@ -14,10 +14,11 @@ Input data pipeline은 SimCLR의 input data pipeline을 참고해서 구성했�
 Ray Data의 내부와 Albumentations library의 내부 모두 최적화를 진행했다. 
 
 <Albumentations library 내부>
-
 1. Operation Reordering function 추가
+   연산의 양을 줄여주는 crop, 등의 연산을 먼저 수행하도록 operation순서를 변경해주는 기능이다. 
   
 2. Pushing down Float conversion function 추가
+   Float type으로 연산을 진행할 필요가 있을 때까지 float연산을 뒤로 미루는 기능이다. 
 
 <Ray Data 내부>
 
