@@ -1,4 +1,4 @@
-![chart (2)](https://github.com/user-attachments/assets/1667cd08-80db-4cd7-aa4d-ad658e82510a)
+![Image](https://github.com/user-attachments/assets/0caed200-2c62-4d20-aabb-25b19ff85f2d)
 
 사용자가 ai model에 training을 위해 데이터를 전달하는 과정인 input data pipeline에 대해 최적화를 진행했다. 
 ImageNet-1k image dataset을 이용해서 최적화의 정도를 판단했다. 
