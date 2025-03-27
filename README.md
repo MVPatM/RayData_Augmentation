@@ -1,5 +1,7 @@
+###프로젝트 결과
 ![Image](https://github.com/user-attachments/assets/0caed200-2c62-4d20-aabb-25b19ff85f2d)
 
+###프로젝트 소개
 사용자가 ai model에 training을 위해 데이터를 전달하는 과정인 input data pipeline에 대해 최적화를 진행했다. 
 ImageNet-1k image dataset을 이용해서 최적화의 정도를 판단했다. 
 Input data pipeline을 구축하기 위해서 ray framework를 사용했고 그 중에서 ray data library를 사용해서 구현했다. 
