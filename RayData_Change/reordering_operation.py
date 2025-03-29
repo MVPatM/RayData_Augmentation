@@ -16,7 +16,7 @@ class TestLogicalRule(Rule):
         operators = []
         udf_op = []
         
-        crop_func = ["album_RandomCrop",
+        crop_func = ("album_RandomCrop",
                      "album_CenterCrop",
                      "album_Crop",
                      "album_CropNonEmptyMaskIfExists",
@@ -26,14 +26,14 @@ class TestLogicalRule(Rule):
                      "album_RandomSizedBBoxSafeCrop",
                      "album_CropAndPad",
                      "album_RandomCropFromBorders",
-                     "album_BBoxSafeRandomCrop"]
+                     "album_BBoxSafeRandomCrop")
         
-        resize_func = ["album_RandomScale",
+        resize_func = ("album_RandomScale",
                        "album_LongestMaxSize",
                        "album_SmallestMaxSize",
-                       "album_Resize"]
+                       "album_Resize")
         
-        grayscale_func = ["album_ToGray"]
+        grayscale_func = ("album_ToGray")
         
         crop_op = []
         resize_op = []
