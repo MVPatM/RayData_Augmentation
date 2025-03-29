@@ -19,12 +19,14 @@ from ray.data._internal.logical.rules.set_read_parallelism import SetReadParalle
 from ray.data._internal.logical.rules.zero_copy_map_fusion import (
     EliminateBuildOutputBlocks,
 )
-from ray.data._internal.logical.rules.test_rule import TestLogicalRule
+from ray.data._internal.logical.rules.reordering_operation import TestLogicalRule
+from ray.data._internal.logical.rules.pushdown_float import PushdownFloatRule
 from ray.data._internal.planner.planner import Planner
 
 DEFAULT_LOGICAL_RULES = [
     ReorderRandomizeBlocksRule,
-    TestLogicalRule
+    TestLogicalRule,
+    PushdownFloatRule
 ]
 
 DEFAULT_PHYSICAL_RULES = [
