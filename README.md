@@ -23,5 +23,6 @@ Ray Data의 내부와 Albumentations library의 내부 모두 최적화를 진�
    Float type으로 연산을 진행할 필요가 있을 때까지 float연산을 뒤로 미루는 기능이다. 
 
 <Ray Data 내부>
-
-test_rule이라는 optimization rule을 ray data내부에 추가, 이 rule에서는 입력받은 UDF을 확인하고 operation reordering과 pushdown float최적화 방식을 수행한다.
+1. Reordering rule 추가
+2. Pushdown float rule 추가
+두가지 rule들은 입력받은 UDF을 확인하고 operation reordering과 pushdown float최적화 방식을 수행한다.
